@@ -53,9 +53,7 @@
 }
 
 #cont_cont {
-    width: 100%;
-    height: 200px;
-    background: #666;
+    background-color: #f6fdff;
 }
 
 /* 컨테이너 */
@@ -294,3 +292,302 @@
     text-align: right;
 }
 
+/* 컨텐츠 */
+.cont {
+    overflow: hidden;
+    padding-top: 30px; /* 배경색 때문에 마진이 아닌 패딩으로 해야 한다 */
+}
+
+.cont .column {
+    float: left;
+    width: 289px;
+    height: 363px;
+    margin: 0 30px 30px 0;
+    padding-right: 30px;
+    position: relative;
+}
+
+.cont .column .ico_img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background: url(../images/icon.png) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cont .column .ico_tit {
+    padding-left: 70px;
+    font-size: 16px;
+    color: #2c94c4;
+}
+
+.cont .column .ico_desc {
+    padding-left: 70px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #d0d0d0;
+    margin-bottom: 15px;
+}
+
+.cont .col1 {
+    border-right: 1px solid #c8c8c8;
+}
+
+.cont .col2 {
+    border-right: 1px solid #c8c8c8;
+}
+
+.cont .col3 {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.cont .col4 {
+    border-right: 1px solid #c8c8c8;
+}
+
+.cont .col5 {
+    border-right: 1px solid #c8c8c8;
+}
+
+.cont .col6 {
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.cont .col1 .ico_img {
+    background-position: 0 -240px;
+}
+
+.cont .col1 .ico_img:hover {
+    background-position: -60px -240px;
+}
+
+.cont .col2 .ico_img {
+    background-position: 0 -300px;
+}
+
+.cont .col2 .ico_img:hover {
+    background-position: -60px -300px;
+}
+
+.cont .col3 .ico_img {
+    background-position: 0 -360px;
+}
+
+.cont .col3 .ico_img:hover {
+    background-position: -60px -360px;
+}
+
+.cont .col4 .ico_img {
+    background-position: 0 -420px;
+}
+
+.cont .col4 .ico_img:hover {
+    background-position: -60px -420px;
+}
+
+.cont .col5 .ico_img {
+    background-position: 0 -480px;
+}
+
+.cont .col5 .ico_img:hover {
+    background-position: -60px -480px;
+}
+
+.cont .col6 .ico_img {
+    background-position: 0 -540px;
+}
+
+.cont .col6 .ico_img:hover {
+    background-position: -60px -540px;
+}
+
+/* 게시판 */
+.notice {
+    position: relative;
+}
+
+.notice h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.notice ul li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: url(../images/dot.gif) no-repeat 0 8px;
+    padding-left: 8px;
+}
+
+.notice ul li a {
+    font-size: 12px;
+}
+
+.notice a.more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url(../images/icon.png) -150px -90px;
+    width: 17px;
+    height: 17px;
+}
+
+/* 게시판2 */
+.notice2 {
+    position: relative;
+    margin-top: 15px;
+}
+
+.notice2 h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.notice2 ul li {
+    overflow: hidden;
+    background: url(../images/dot.gif) no-repeat 0 8px;
+    padding-left: 8px;
+}
+
+.notice2 ul li a {
+    float: left;
+    width: 65%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice2 ul li span {
+    float: right;
+    width: 30%;
+    text-align: right;
+}
+
+.notice2 a.morer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url(../images/icon.png) -150px -90px;
+    width: 17px;
+    height: 17px;
+}
+
+/* 게시판3 */
+.notice3 {
+    position: relative;
+}
+
+.notice3 h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.notice3 ul li {
+    position: relative;
+    padding: 8px 0 14px 60px;
+}
+
+.notice3 ul li a img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    border: 1px solid #0093bd;
+}
+
+.notice3 ul li a strong {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice3 ul li a span {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.notice3 a.more {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    background: url(../images/icon.png) -150px -90px;
+    width: 17px;
+    height: 17px;
+}
+
+/* 마우스 오버효과1 */
+.notice_hover h4 {
+    font-size: 14px;
+    color: #0093bd;
+    padding-bottom: 3px;
+    font-weight: bold;
+}
+
+.notice_hover ul {
+    overflow: hidden;
+}
+
+.notice_hover ul li {
+    float: left;
+    width: 93px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+.notice_hover ul li:last-child {
+    margin-right: 0;
+}
+
+/* 클래스를 이용한 방식 */
+/* .notice_hover ul li.last {
+    margin-right: 0;
+} */
+
+.notice_hover ul li a span {
+    position: relative;
+    display: block;
+    width: 93px;
+    height: 93px;
+    line-height: 93px;
+}
+
+.notice_hover ul li a span img {
+    width: 100%;
+}
+
+.notice_hover ul li a span em {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+.notice_hover ul li a span:hover em {
+    visibility: visible;
+}
+
+.notice_hover ul li a strong {
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 3px;
+}
