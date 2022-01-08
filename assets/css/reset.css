@@ -43,7 +43,8 @@ table {
 }
 
 /* 폰트 스타일 초기화 */
-em {
+em,
+address {
     font-style: normal;
 }
 
@@ -58,6 +59,12 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 13px;
     color: #222;
     font-weight: normal;
+}
+
+/* 테두리 초기화 */
+img,
+fieldset {
+    border: 0 none;
 }
 
 /* IR 효과 3가지 */
@@ -123,4 +130,3 @@ h1, h2, h3, h4, h5, h6 {
 .mt50 {
     margin-top: 50px !important;
 }
-

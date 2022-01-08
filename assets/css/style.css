@@ -23,20 +23,14 @@
 }
 
 /* 레이아웃 */
-#wrap {}
-
 #header {
     width: 100%;
     height: 325px;
     background: url(../images/header_bg.jpg) center top repeat-x;
 }
 
-#contents {}
-
 #footer {
-    width: 100%;
-    height: 200px;
-    background: #333;
+    border-top: 1px solid #eee;
 }
 
 /* 컨텐츠 레이아웃 */
@@ -596,8 +590,6 @@
 자기만의 공통 리셋 소스를 만들어서 사용*/
 
 /* 마우스 오버효과2 */
-.notice_hover2 {}
-
 .notice_hover2 ul {
     overflow: hidden;
 }
@@ -760,4 +752,208 @@
     position: absolute;
     top: 9px;
     right: 9px;
+}
+
+/* 갤러리 */
+.gallery {
+    border: 1px solid #ccc;
+    height: 254px;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery h4 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #0093bd;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0 8px 11px;
+}
+
+.gallery .gallery_btn {
+    position: absolute;
+    top: 7px;
+    right: 5px;
+}
+
+.gallery .gallery_btn ul {
+    overflow: hidden;
+}
+
+.gallery .gallery_btn ul li {
+    float: left;
+    margin: 1px 2px;
+}
+
+.gallery .gallery_btn ul li a {
+    display: block;
+    width: 23px;
+    height: 23px;
+    background: url(../images/icon.png) no-repeat;
+}
+
+.gallery .gallery_btn ul li.gb_icon1 a {
+    background-position: -150px -120px;
+}
+
+.gallery .gallery_btn ul li.gb_icon2 a {
+    background-position: -150px -143px;
+}
+
+.gallery .gallery_btn ul li.gb_icon3 a {
+    background-position: -150px -166px;
+}
+
+.gallery .gallery_btn ul li.gb_icon4 a {
+    background-position: -150px -189px;
+}
+
+.gallery .gallery_btn ul li.gb_icon1 a:hover {
+    background-position: -173px -120px;
+}
+
+.gallery .gallery_btn ul li.gb_icon2 a:hover {
+    background-position: -173px -143px;
+}
+
+.gallery .gallery_btn ul li.gb_icon3 a:hover {
+    background-position: -173px -166px;
+}
+
+.gallery .gallery_btn ul li.gb_icon4 a:hover {
+    background-position: -173px -189px;
+}
+
+.gallery .gallery_img img {
+    width: 100%;
+}
+
+/* 로그인 */
+#login-wrap {
+    background: #f2f4f5;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.login_header {
+    font-size: 12px;
+    height: 30px;
+    overflow: hidden;
+}
+
+.login_header .lh_check {
+    float: left;
+    padding-right: 15px;
+}
+
+.login_header .lh_check .input_check {
+    vertical-align: -2px;
+    /* 인풋 박스 정렬 */
+}
+
+.login_header .lh_ip {
+    float: left;
+}
+
+.login_header .lh_ip em {
+    color: #0093bd;
+    text-decoration: underline;
+}
+
+.login_content {
+    position: relative;
+}
+
+.login_content .lc_btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 62px;
+    height: 47px;
+    background: #fff;
+    border: 1px solid #bebebe;
+}
+
+.login_content .input_text {
+    background: #fff;
+    border: 1px solid #bebebe;
+    width: 180px;
+    height: 16px;
+    padding: 2px 5px;
+    margin-bottom: 3px;
+}
+
+.login_footer {
+    margin-top: 5px;
+}
+
+.login_footer ul li {
+    display: inline;
+}
+
+.login_footer ul li a {
+    font-size: 12px;
+}
+
+/* 팝업 */
+.popup h4 {
+    color: #0093bd;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 4px;
+}
+
+.popup ul {
+    overflow: hidden;
+}
+
+.popup ul li {
+    float: left;
+    width: 93px;
+    margin-right: 5px;
+}
+
+/* nth-child()도 있지만 호환성을 위해 클래스명으로 지정 */
+.popup ul li.last {
+    margin-right: 0;
+}
+
+.popup ul li img {
+    width: 100%;
+}
+
+/* 푸터 */
+.footer {
+    padding: 25px 0;
+    text-align: center;
+    /* 플롯을 사용하면 text-align이 적용이 안되기 때문에 display: inline을 사용한다 */
+}
+
+.footer ul {
+    margin-bottom: 20px;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 0 7px 0 10px;
+    position: relative;
+}
+
+.footer ul li::before {
+    content: '';
+    width: 1px;
+    height: 12px;
+    background: #ccc;
+    position: absolute;
+    top: 2px;
+    left: 0;
+}
+
+.footer ul li:first-child::before {
+    width: 0;
+    height: 0;
+}
+
+.footer .w3c {
+    margin-top: 15px;
 }
