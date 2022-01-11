@@ -98,4 +98,12 @@ $(document).ready(function(){
         
         window.open("popup.html","popup01", "width=800, height=590, top=50, left=50, scrollbars=0, toolbar=0, menubar=0");
     });
+
+    // 라이트 박스 npm 인스톨 필요
+//     $(".lightgallery").lightgallery({
+//         thumbnail: true,
+//         autoplay: true,
+//         pause: 3000,
+//         progressBar: true
+//     });
 })
